@@ -6,7 +6,10 @@
 **Pre Steps**
 * Install latest version of Spring STS : https://spring.io/tools
 * Install Postman plugin in Chrome for testing Rest calls
-* Configure server.port = 1975 in application.properties
+* Configure server.port = 8080 in application.properties
+
+**Tech Stack**
+
 
 **Invoking the Rest Controller**
 * GET   		/employees 			Gets all the employees   http://localhost:8080/employees
@@ -16,8 +19,11 @@
 * DELETE		/employees/id		Deletes the employee	 http://localhost:8080/employees/3
 
 
-**Issues**
-
+**JSON Request Sample**
+* POST : {"id":5,"name":"AbdulRaafay2","age":50,"salary":5000.0}
+* GET  : [{"id":5,"name":"AbdulRaafay2","age":50,"salary":5000.0},{"id":1,"name":"AbdulRaafay1","age":10,"salary":1000.0},{"id":2,"name":"AbdulRaafay2","age":20,"salary":2000.0}]
+* DELETE : http://localhost:8080/employees/5
+* PUT : {"id":5,"name":"Shayan","age":5,"salary":15000.0}
 
 
 
