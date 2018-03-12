@@ -2,6 +2,8 @@
 # Spring Boot Demo 
 # Demonstrates Employee CRUD Operations through REST Controller with JSON Request/Responses.
 # Updated with JPA/Apache Derby Persistence Layer
+# Updated with Microservice related Annotations
+
 
 **Pre Steps**
 * Install latest version of Spring STS : https://spring.io/tools
@@ -10,13 +12,17 @@
 
 **Tech Stack**
 
+**Implemented Versions**
+* http://localhost:8080/v1/microservice/employees
+* http://localhost:8080/v2/microservice/employees
+
 
 **Invoking the Rest Controller**
-* GET   		/employees 			Gets all the employees   http://localhost:8080/employees
-* GET    		/employees/id		Get the employee		 http://localhost:8080/employees/1
-* POST   		/employees			Create new employee		 http://localhost:8080/employees
-* PUT   		/employees/id		Update the employee		 http://localhost:8080/employees/
-* DELETE		/employees/id		Deletes the employee	 http://localhost:8080/employees/3
+* GET   		/employees 			Gets all the employees   http://localhost:8080/v1/employee/employees
+* GET    		/employees/id		Get the employee		 http://localhost:8080/v1/employee/employees/1
+* POST   		/employees			Create new employee		 http://localhost:8080/v1/employee/employees
+* PUT   		/employees/id		Update the employee		 http://localhost:8080/v1/employee/employees/
+* DELETE		/employees/id		Deletes the employee	 http://localhost:8080/v1/employee/employees/3
 
 
 **JSON Request Sample**

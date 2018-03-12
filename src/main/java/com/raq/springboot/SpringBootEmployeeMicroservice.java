@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootEmployeeCrudDataApplication {
+public class SpringBootEmployeeMicroservice {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootEmployeeCrudDataApplication.class, args);
+		SpringApplication.run(SpringBootEmployeeMicroservice.class, args);
 	}
 }

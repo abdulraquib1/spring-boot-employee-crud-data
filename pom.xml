@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.raq.springboot</groupId>
-	<artifactId>spring-boot-employee-crud-data</artifactId>
+	<artifactId>spring-boot-employee-ms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-employee-crud-data</name>
-	<description>Demo project for Spring Boot Employee CRUD with Database</description>
+	<name>spring-boot-employee-ms</name>
+	<description>Demo project for Spring Boot Employee Microservice</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
