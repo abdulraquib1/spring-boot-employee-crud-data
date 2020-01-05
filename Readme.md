@@ -1,8 +1,12 @@
 
-# Spring Boot Demo 
+# Spring Boot Demo
+ 
 # Demonstrates Employee CRUD Operations through REST Controller with JSON Request/Responses.
 # Updated with JPA/Apache Derby Persistence Layer
 # Updated with Microservice related Annotations
+# Updated Exception Handling
+# Added postman collection for Testing
+
 
 
 **Pre Steps**
@@ -13,29 +17,118 @@
 **Tech Stack**
 
 **Implemented Versions**
-* http://localhost:8080/v1/microservice/employees
-* http://localhost:8080/v2/microservice/employees
+* http://localhost:8080/employees
+* http://localhost:8080/v1/employees
 
 
 **Invoking the Rest Controller**
-* GET   		/employees 			Gets all the employees   http://localhost:8080/v1/employee/employees
-* GET    		/employees/id		Get the employee		 http://localhost:8080/v1/employee/employees/1
-* POST   		/employees			Create new employee		 http://localhost:8080/v1/employee/employees
-* PUT   		/employees/id		Update the employee		 http://localhost:8080/v1/employee/employees/
-* DELETE		/employees/id		Deletes the employee	 http://localhost:8080/v1/employee/employees/3
+* GET   		/employees 			Gets all the employees [http://localhost:8080/v1/employee/employees](http://localhost:8080/v1/employee/employees)
+* GET    		/employees/id		Get the employee		 [http://localhost:8080/v1/employee/employees/1](http://localhost:8080/v1/employee/employees/1)
+* POST   		/employees			Create new employees	 [http://localhost:8080/v1/employee/employees](http://localhost:8080/v1/employee/employees)
+* PUT   		/employees/id		Update the employee		 [http://localhost:8080/v1/employee/employees/](http://localhost:8080/v1/employee/employees/)
+* DELETE		/employees/id		Deletes the employee	 [http://localhost:8080/v1/employee/employees/3](http://localhost:8080/v1/employee/employees/3)
 
 
 **JSON Request Sample**
-* POST : {"id":5,"name":"AbdulRaafay2","age":50,"salary":5000.0}
-* GET  : [{"id":5,"name":"AbdulRaafay2","age":50,"salary":5000.0},{"id":1,"name":"AbdulRaafay1","age":10,"salary":1000.0},{"id":2,"name":"AbdulRaafay2","age":20,"salary":2000.0}]
-* DELETE : http://localhost:8080/employees/5
-* PUT : {"id":5,"name":"Shayan","age":5,"salary":15000.0}
+* POST :  
 
+```javascript 
 
+{
+  "id": 5,
+  "name": "AbdulRaafay2",
+  "age": 50,
+  "salary": 5000
+}
+
+```
+
+* GET  :  
+
+```javascript
+[
+  {
+    "id": 5,
+    "name": "AbdulRaafay2",
+    "age": 50,
+    "salary": 5000
+  },
+  {
+    "id": 1,
+    "name": "AbdulRaafay1",
+    "age": 10,
+    "salary": 1000
+  },
+  {
+    "id": 2,
+    "name": "AbdulRaafay2",
+    "age": 20,
+    "salary": 2000
+  }
+]
+```
+
+* DELETE : 
+
+```javascript 
+
+http://localhost:8080/employees/5 
+
+```
+
+* PUT :  
+
+```javascript 
+
+{
+  "id": 5,
+  "name": "Shayan",
+  "age": 5,
+  "salary": 15000
+} 
+
+```
+
+* Error Response :
+
+```javascript
+  
+{
+    "timestamp": 1578236232818,
+    "status": 404,
+    "error": "Not Found",
+    "exception": "com.raq.springboot.employee.exception.EmployeeNotFoundException",
+    "message": "EmpId 10",
+    "path": "/employee/employees/10"
+}
+
+```
+
+** Create Request JSON Array **
+
+```javascript
+[
+    {
+      "id": 5,
+      "name": "AbdulRaquib11",
+      "age": 50,
+      "salary": 2001
+    },
+    {
+      "id": 6,
+      "name": "AbdulRaquib11",
+      "age": 50,
+      "salary": 2001
+    }
+  ]
+```
 
 **Refer for Application properties**
 
-[https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
+[Spring properties reference](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
+
+[MD File Syntax](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
+
 
 
 

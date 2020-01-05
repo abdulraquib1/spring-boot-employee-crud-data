@@ -13,7 +13,7 @@ import com.raq.springboot.employee.model.Employee;
 import com.raq.springboot.employee.service.EmployeeService;
 
 @RestController
-@RequestMapping("v1/employee")
+@RequestMapping("v1")
 public class EmployeeControllerV1 {
 
 	@Autowired
