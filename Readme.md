@@ -6,7 +6,8 @@
 # Updated with Microservice related Annotations
 # Updated Exception Handling
 # Added postman collection for Testing
-# Updated Swagger documentation
+# Added Swagger documentation
+# Added Springboot Actuator
 
 
 
@@ -18,10 +19,11 @@
 **Tech Stack**
 
 **Implemented Versions**
-*  Default Version:     http://localhost:8080/employee
-*  V1 Version     :     http://localhost:8080/employee/v1/
-*  Swagger UI	  :		http://localhost:8080/swagger-ui.html
-*  Swagger Contract:	http://localhost:8080/v2/api-docs
+*  Default Version		:   http://localhost:8080/employee
+*  V1 Version     		:   http://localhost:8080/employee/v1/
+*  Swagger UI	  		:	http://localhost:8080/swagger-ui.html
+*  Swagger Contract		:	http://localhost:8080/v2/api-docs
+*  Spring boot Actuator	:	http://localhost:8080/actuator/index.html#/actuator
 
 
 **Invoking the Rest Controller**
