@@ -6,6 +6,7 @@
 # Updated with Microservice related Annotations
 # Updated Exception Handling
 # Added postman collection for Testing
+# Updated Swagger documentation
 
 
 
@@ -17,16 +18,18 @@
 **Tech Stack**
 
 **Implemented Versions**
-* http://localhost:8080/employees
-* http://localhost:8080/v1/employees
+*  Default Version:     http://localhost:8080/employee
+*  V1 Version     :     http://localhost:8080/employee/v1/
+*  Swagger UI	  :		http://localhost:8080/swagger-ui.html
+*  Swagger Contract:	http://localhost:8080/v2/api-docs
 
 
 **Invoking the Rest Controller**
-* GET   		/employees 			Gets all the employees [http://localhost:8080/v1/employee/employees](http://localhost:8080/v1/employee/employees)
-* GET    		/employees/id		Get the employee		 [http://localhost:8080/v1/employee/employees/1](http://localhost:8080/v1/employee/employees/1)
-* POST   		/employees			Create new employees	 [http://localhost:8080/v1/employee/employees](http://localhost:8080/v1/employee/employees)
-* PUT   		/employees/id		Update the employee		 [http://localhost:8080/v1/employee/employees/](http://localhost:8080/v1/employee/employees/)
-* DELETE		/employees/id		Deletes the employee	 [http://localhost:8080/v1/employee/employees/3](http://localhost:8080/v1/employee/employees/3)
+* GET   		/employees 			Gets all the employees [http://localhost:8080/employee/employees](http://localhost:8080/employee/employees)
+* GET    		/employees/id		Get the employee		 [http://localhost:8080/employee/employees/1](http://localhost:8080/employee/employees/1)
+* POST   		/employees			Create new employees	 [http://localhost:8080/employee/employees](http://localhost:8080/employee/employees)
+* PUT   		/employees/id		Update the employee		 [http://localhost:8080/employee/employees/](http://localhost:8080/employee/employees/)
+* DELETE		/employees/id		Deletes the employee	 [http://localhost:8080/employee/employees/3](http://localhost:8080/employee/employees/3)
 
 
 **JSON Request Sample**

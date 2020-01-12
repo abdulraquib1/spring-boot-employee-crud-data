@@ -3,14 +3,25 @@ package com.raq.springboot.employee.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description="All details of the Employee attributes")
 @Entity
 public class Employee {
 	
 		
 	@Id
+	@ApiModelProperty(notes="Enter the Id of the employee")
 	private int id;
+		
+	@ApiModelProperty(notes="Enter the name of the employee")
 	private String name;
+	
+	@ApiModelProperty(notes="Enter the age of the employee in years")
 	private int age;
+	
+	@ApiModelProperty(notes="Enter the salary of the employee in years")
 	private double salary;
 	
 	public Employee() {

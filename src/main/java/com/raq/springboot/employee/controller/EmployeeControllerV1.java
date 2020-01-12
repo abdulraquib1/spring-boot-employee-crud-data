@@ -13,18 +13,20 @@ import com.raq.springboot.employee.model.Employee;
 import com.raq.springboot.employee.service.EmployeeService;
 
 @RestController
-@RequestMapping("v1")
+@RequestMapping("employee/v1")
 public class EmployeeControllerV1 {
 
 	@Autowired
 	private EmployeeService employeeService;
 
-	@RequestMapping("/employees")
+	
+	@RequestMapping(method = RequestMethod.GET, value="/employees")
 	public List<Employee> getEmployees() {
 		return employeeService.getEmployees();
 	}
 
-	@RequestMapping("/employees/{id}")
+	
+	@RequestMapping(method = RequestMethod.GET, value="/employees/{id}")
 	public Employee getEmployee(@PathVariable String id) {
 		return employeeService.getEmployee(Integer.parseInt(id));
 		
