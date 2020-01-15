@@ -8,6 +8,7 @@
 # Added postman collection for Testing
 # Added Swagger documentation
 # Added Springboot Actuator
+# Explored Enhanced versioning
 
 
 
@@ -32,6 +33,12 @@
 * POST   		/employees			Create new employees	 [http://localhost:8080/employee/employees](http://localhost:8080/employee/employees)
 * PUT   		/employees/id		Update the employee		 [http://localhost:8080/employee/employees/](http://localhost:8080/employee/employees/)
 * DELETE		/employees/id		Deletes the employee	 [http://localhost:8080/employee/employees/3](http://localhost:8080/employee/employees/3)
+
+** TODO **
+* Update the Unit Tests with Mockito
+* Update the Cucumber Tests
+* How to selectively enable swagger annotations for specific controllers
+* Deploy the service to AWS cloud 
 
 
 **JSON Request Sample**

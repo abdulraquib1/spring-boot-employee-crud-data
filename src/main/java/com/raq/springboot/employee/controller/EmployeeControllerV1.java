@@ -12,10 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.raq.springboot.employee.model.Employee;
 import com.raq.springboot.employee.service.EmployeeService;
 
+import io.swagger.annotations.Api;
+
 @RestController
 @RequestMapping("employee/v1")
-public class EmployeeControllerV1 {
+@Api(tags = "Employee API V1", value = " for create, update and delete operations", description = "")
+public class EmployeeControllerV1{
 
+	
 	@Autowired
 	private EmployeeService employeeService;
 
@@ -26,17 +30,20 @@ public class EmployeeControllerV1 {
 	}
 
 	
+	/*
 	@RequestMapping(method = RequestMethod.GET, value="/employees/{id}")
 	public Employee getEmployee(@PathVariable String id) {
 		return employeeService.getEmployee(Integer.parseInt(id));
 		
 	}
+	*/
 
 	@RequestMapping(method = RequestMethod.POST, value="/employees")
 	public void addEmployee(@RequestBody Employee employee) {
 		employeeService.addEmployee(employee);
 	}
 	
+	/*
 	@RequestMapping(method = RequestMethod.PUT, value="/employees/{id}")
 	public void addEmployee(@RequestBody Employee employee, @PathVariable String id) {
 		employeeService.updateEmployee(employee);
@@ -46,5 +53,6 @@ public class EmployeeControllerV1 {
 	public void addEmployee( @PathVariable String id) {
 		employeeService.deleteEmployee(Integer.parseInt(id));
 	}
+	*/
 	
 }

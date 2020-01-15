@@ -75,7 +75,6 @@
 			<artifactId>spring-data-rest-hal-browser</artifactId>
 		</dependency>
 		
-		
 	</dependencies>
 
 	<build>
