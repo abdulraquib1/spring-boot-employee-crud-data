@@ -6,14 +6,17 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.raq.springboot.employee.dao.EmployeeDAO;
+import com.raq.springboot.employee.dao.EmployeeRepository;
 import com.raq.springboot.employee.model.Employee;
 
 @Service
 public class EmployeeService {
 
+	//@Autowired
+	//private EmployeeDAO employeeDAO;
+	
 	@Autowired
-	private EmployeeDAO employeeDAO;
+	private  EmployeeRepository employeeDAO;
 
 	public List<Employee> getEmployees() {
 

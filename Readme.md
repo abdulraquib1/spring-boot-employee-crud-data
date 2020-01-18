@@ -8,7 +8,8 @@
 # Added postman collection for Testing
 # Added Swagger documentation
 # Added Springboot Actuator
-# Explored Enhanced versioning
+# Added Enhanced versioning
+# Updated H2 Database and JPA Mappings
 
 
 
@@ -25,6 +26,7 @@
 *  Swagger UI	  		:	http://localhost:8080/swagger-ui.html
 *  Swagger Contract		:	http://localhost:8080/v2/api-docs
 *  Spring boot Actuator	:	http://localhost:8080/actuator/index.html#/actuator
+*  H2 Console			: 	http://localhost:8080/h2-console [use : jdbc:h2:mem:testdb]
 
 
 **Invoking the Rest Controller**
@@ -39,6 +41,7 @@
 * Update the Cucumber Tests
 * How to selectively enable swagger annotations for specific controllers
 * Deploy the service to AWS cloud 
+* Work on One-Many entity relationships
 
 
 **JSON Request Sample**

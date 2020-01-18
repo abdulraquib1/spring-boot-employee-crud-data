@@ -1,7 +1,10 @@
 package com.raq.springboot.employee.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -23,6 +26,10 @@ public class Employee {
 	
 	@ApiModelProperty(notes="Enter the salary of the employee in years")
 	private double salary;
+	
+	//@OneToMany(mappedBy="employee")
+	//private List<Address> addresses;
+	
 	
 	public Employee() {
 	
@@ -69,4 +76,11 @@ public class Employee {
 	}
 	
 	
+/*	public List<Address> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
+	}	*/
 }

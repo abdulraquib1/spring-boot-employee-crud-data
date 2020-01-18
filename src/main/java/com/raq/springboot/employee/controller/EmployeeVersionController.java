@@ -10,7 +10,7 @@ import com.raq.springboot.dto.EmployeeV2;
 public class EmployeeVersionController {
 	
 	
-	//Versioning strategy 1 using Simple URI Mapping
+	//Versioning strategy 1 using simple URI mapping
 	//http://localhost:8080/v1/employee
 	//http://localhost:8080/v1/employee
 	@GetMapping("v1/employee")
@@ -52,7 +52,7 @@ public class EmployeeVersionController {
 	}
 	
 	//MIME Type versioning
-	//Versioning strategy 4 using content-negotiations or accept versioning
+	//Versioning strategy 4 using content-negotiations or accept versioning, also known as MIME Type versioning
 	//http://localhost:8080/employee/header
 	@GetMapping(value = "employee/header" , produces="application/com.raq.springboot-v1+json")
 	public EmployeeV1 producesV1() {
