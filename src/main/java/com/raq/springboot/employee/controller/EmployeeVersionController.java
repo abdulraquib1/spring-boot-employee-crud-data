@@ -13,6 +13,8 @@ public class EmployeeVersionController {
 	//Versioning strategy 1 using simple URI mapping
 	//http://localhost:8080/v1/employee
 	//http://localhost:8080/v1/employee
+	//Infact I was thinking we could create a whole new controller for a different version and extend the same base controller.
+	
 	@GetMapping("v1/employee")
 	public EmployeeV1 employeeV1() {
 		return new EmployeeV1(1,"Tom",25,60000.00);

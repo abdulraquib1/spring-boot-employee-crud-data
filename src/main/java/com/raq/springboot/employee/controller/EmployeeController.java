@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiOperation;
 
 
 @RestController
-@RequestMapping("employee")
+ //RequestMapping("employee")
 @Api(tags = "Employee API", value = " for create, update and delete operations")
 public class EmployeeController {
 
@@ -59,7 +59,7 @@ public class EmployeeController {
 
 	@RequestMapping(method = RequestMethod.DELETE, value = "/employees/{id}")
 	@ApiOperation(value = "remove the employee for the input id")
-	public void addEmployee(@PathVariable String id) {
+	public void removeEmployee(@PathVariable String id) {
 		employeeService.deleteEmployee(Integer.parseInt(id));
 	}
 

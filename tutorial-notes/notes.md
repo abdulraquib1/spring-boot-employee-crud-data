@@ -54,8 +54,6 @@
  
 **  basic security **
 
-
-
 * # Configuration for basic security
 * security.user.name=user
 * security.user.password=password
@@ -93,3 +91,17 @@
 
 
 ```
+
+# Richardson Maturity Model
+
+# HATEOS
+* Hypermedia as the engine of application state
+* user of providing additional information, ie. when employee not found, give reference employees link
+
+# Best practices
+* use right HTTP request
+* give proper response codes, when resource created, respond CREATED as opposed to SUCCESS
+* no secure info in URI
+* resources should be Nouns( Account, Employee), actions defined on users
+
+

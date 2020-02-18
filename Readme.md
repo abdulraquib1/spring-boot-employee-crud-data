@@ -13,6 +13,7 @@
 
 
 
+
 **Pre Steps**
 * Install latest version of Spring STS : https://spring.io/tools
 * Install Postman plugin in Chrome for testing Rest calls
@@ -27,21 +28,25 @@
 *  Swagger Contract		:	http://localhost:8080/v2/api-docs
 *  Spring boot Actuator	:	http://localhost:8080/actuator/index.html#/actuator
 *  H2 Console			: 	http://localhost:8080/h2-console [use : jdbc:h2:mem:testdb]
+*  Help 				:   [PROJECT_FOLDER]\HELP.md [Auto-generated]
 
 
 **Invoking the Rest Controller**
-* GET   		/employees 			Gets all the employees [http://localhost:8080/employee/employees](http://localhost:8080/employee/employees)
-* GET    		/employees/id		Get the employee		 [http://localhost:8080/employee/employees/1](http://localhost:8080/employee/employees/1)
-* POST   		/employees			Create new employees	 [http://localhost:8080/employee/employees](http://localhost:8080/employee/employees)
-* PUT   		/employees/id		Update the employee		 [http://localhost:8080/employee/employees/](http://localhost:8080/employee/employees/)
-* DELETE		/employees/id		Deletes the employee	 [http://localhost:8080/employee/employees/3](http://localhost:8080/employee/employees/3)
+* GET   		/employees 			Gets all the employees   [http://localhost:8080/employees](http://localhost:8080/employee/employees)
+* GET    		/employees/id		Get the employee		 [http://localhost:8080/employees/1](http://localhost:8080/employee/employees/1)
+* POST   		/employees			Create new employees	 [http://localhost:8080/employees](http://localhost:8080/employee/employees)
+* PUT   		/employees/id		Update the employee		 [http://localhost:8080/employees/](http://localhost:8080/employee/employees/)
+* DELETE		/employees/id		Deletes the employee	 [http://localhost:8080/employees/3](http://localhost:8080/employee/employees/3)
 
 ** TODO **
 * Update the Unit Tests with Mockito
+* In-memory DB Tests
 * Update the Cucumber Tests
 * How to selectively enable swagger annotations for specific controllers
 * Deploy the service to AWS cloud 
-* Work on One-Many entity relationships
+* One-Many entity relationships
+* Linking postman calls in a chain
+* Caching aspects
 
 
 **JSON Request Sample**
@@ -143,6 +148,8 @@ http://localhost:8080/employees/5
 [Spring properties reference](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
 
 [MD File Syntax](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
+
+[In28mins Github Resource](https://github.com/in28minutes/spring-microservices)
 
 
 
