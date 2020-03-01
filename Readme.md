@@ -41,12 +41,14 @@
 ** TODO **
 * Update the Unit Tests with Mockito
 * In-memory DB Tests
+* point DB to mySQL DB or No SQL DB
 * Update the Cucumber Tests
 * How to selectively enable swagger annotations for specific controllers
 * Deploy the service to AWS cloud 
 * One-Many entity relationships
 * Linking postman calls in a chain
 * Caching aspects
+
 
 
 **JSON Request Sample**
